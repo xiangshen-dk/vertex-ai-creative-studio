@@ -96,3 +96,9 @@ variable "sleep_time" {
   type        = number
   default     = 45
 }
+
+variable "disable_invoker_iam" {
+  description = "Whether to disable Cloud Run invoker IAM. When true, invoker IAM will be disabled regardless of load balancer configuration."
+  type        = bool
+  default     = false
+}
